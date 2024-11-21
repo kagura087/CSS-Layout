@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Item</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 100px auto 100px;
+            grid-template-rows: 50px auto 100px;
+            grid-template-areas:
+            "header header header"
+            ". content ."
+            "footer footer footer";
+        }
+
+        .header {
+            background-color: aqua;
+            grid-area: header;
+        }
+
+        .content {
+            background-color: rgb(238, 255, 0);
+            grid-area: content;
+        }
+
+        .footer {
+            background-color: aqua;
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Selamat Datang Di Programmer Zaman Now</div>
+        <div class="content">
+            <h1>Programmer Zaman Now</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam nobis, suscipit commodi nihil quod dicta
+                veritatis dolore vitae distinctio veniam similique rem et expedita nesciunt vel cum ullam sunt
+                quibusdam!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam nobis, suscipit commodi nihil quod dicta
+                veritatis
+                dolore vitae distinctio veniam similique rem et expedita nesciunt vel cum ullam sunt quibusdam!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam nobis, suscipit commodi nihil quod dicta
+                veritatis dolore
+                vitae distinctio veniam similique rem et expedita nesciunt vel cum ullam sunt quibusdam!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam nobis, suscipit commodi nihil quod dicta
+                veritatis
+                dolore vitae distinctio veniam similique rem et expedita nesciunt vel cum ullam sunt quibusdam!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam nobis, suscipit commodi nihil quod dicta
+                veritatis dolore
+                vitae distinctio veniam similique rem et expedita nesciunt vel cum ullam sunt quibusdam!</p>
+        </div>
+        <div class="footer"> Develop by Programmer Zaman Now</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Grow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .content {
+            background-color: aqua;
+            border: 2px solid blue;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .content1 {
+            flex-shrink: 0;
+            flex-basis: 300px;
+        }
+
+        .content2 {
+            flex-shrink: 0;
+            flex-basis: 200px;
+        }
+
+        .content3 {
+            flex-shrink: 0;
+            flex-basis: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content content1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti tempora error,
+            excepturi ullam beatae magni mollitia cupiditate consequatur repellendus architecto labore amet quaerat
+            explicabo culpa ipsum at sed placeat ab.</div>
+        <div class="content content2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil facilis rerum
+            voluptas praesentium enim, delectus ratione placeat quos omnis incidunt exercitationem ipsum, corrupti
+            consectetur ipsa ad aperiam minus odit ea!</div>
+        <div class="content content3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo reprehenderit
+            recusandae ducimus maxime, impedit ad eligendi fugit accusantium consequuntur natus quaerat aperiam et
+            deleniti. Earum deleniti maiores accusantium in facilis?</div>
+    </div>
+</body>
+
+</html>
